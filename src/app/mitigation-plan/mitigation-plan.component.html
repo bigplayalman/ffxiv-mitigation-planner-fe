@@ -1,4 +1,11 @@
-<div *ngFor="let row of rows">
+<!-- <div *ngFor="let row of rows">
   <div>{{row.start}}</div>
   <div>{{row.start | calcDuration : row.duration}}</div>
+</div> -->
+
+
+<div class="grid-container">
+  <div class="grid-row" *ngFor="let item of items">
+    <div class="grid-item" *ngFor="let row of rows"></div>
+  </div>
 </div>

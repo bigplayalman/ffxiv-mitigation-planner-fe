@@ -6,14 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./mitigation-plan.component.scss'],
 })
 export class MitigationPlanComponent {
-  rows = [
-    {
-      start: 0,
-      duration: 10,
-    },
-    {
-      start: 25,
-      duration: 5,
-    },
-  ];
+  rows = Array(3).fill(null); // Adjust the number of rows as needed
+  items = Array(1200).fill(null);
 }
