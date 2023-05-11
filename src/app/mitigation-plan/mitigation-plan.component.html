@@ -1,1 +1,4 @@
-<p>mitigation-plan works!</p>
+<div *ngFor="let row of rows">
+  <div>{{row.start}}</div>
+  <div>{{row.start | calcDuration : row.duration}}</div>
+</div>

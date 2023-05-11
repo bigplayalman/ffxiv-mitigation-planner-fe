@@ -9,6 +9,7 @@ const routes: Routes = [
         (m) => m.MitigationPlanModule
       ),
   },
+  { path: '', redirectTo: '/mitigation-plan', pathMatch: 'full' },
 ];
 
 @NgModule({

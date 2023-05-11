@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MitigationPlanRoutingModule } from './mitigation-plan-routing.module';
 import { MitigationPlanComponent } from './mitigation-plan.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -15,11 +16,11 @@ import { MitigationPlanComponent } from './mitigation-plan.component';
   ],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
     MatTableModule,
     MatInputModule,
     MatButtonModule,
-    MitigationPlanRoutingModule
+    MitigationPlanRoutingModule,
+    SharedModule
   ]
 })
 export class MitigationPlanModule { }
