@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -68,7 +69,8 @@
               "browserTarget": "ffxiv-mitigation-planner-fe:build:production"
             },
             "development": {
-              "browserTarget": "ffxiv-mitigation-planner-fe:build:development"
+              "browserTarget": "ffxiv-mitigation-planner-fe:build:development",
+              "proxyConfig": "proxy.json"
             }
           },
           "defaultConfiguration": "development"
@@ -93,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "03968c83-8405-4cf9-844d-6aecd20a1e37"
   }
 }
