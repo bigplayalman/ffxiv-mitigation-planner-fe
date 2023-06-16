@@ -1,20 +1,23 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(60, 1fr);
+  grid-template-columns: 40px 300px 40px 100px 1fr;
   gap: 1px;
+  min-width: 900px;
+  width: 100vw;
 }
 
-.grid-row:nth-child(3n + 1) {
-  background-color: white;
-  grid-auto-rows: 50px;
+.grid-header, .grid-row {
+  display: contents;
 }
 
-.grid-row:nth-child(3n) {
-  background-color: blue;
-  grid-auto-rows: 150px;
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .grid-item {
-  
   border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

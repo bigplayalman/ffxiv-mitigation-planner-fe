@@ -1,0 +1,16 @@
+<mat-form-field appearance="fill">
+  <mat-select [formControl]="skillControl" multiple>
+    <mat-select-trigger>
+      <mat-chip-listbox>
+        <mat-chip *ngFor="let skill of skillControl.value"
+          [removable]="true" (removed)="onSkillRemove(skill)">
+          {{ skill }}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+      </mat-chip-listbox>
+    </mat-select-trigger>
+
+    <mat-option *ngFor="let skill of skillList" [value]="skill">{{skill}}</mat-option>
+
+  </mat-select>
+</mat-form-field>

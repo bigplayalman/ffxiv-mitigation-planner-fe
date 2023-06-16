@@ -1,11 +1,23 @@
-<!-- <div *ngFor="let row of rows">
-  <div>{{row.start}}</div>
-  <div>{{row.start | calcDuration : row.duration}}</div>
-</div> -->
-
-
 <div class="grid-container">
-  <div class="grid-row" *ngFor="let item of items">
-    <div class="grid-item" *ngFor="let row of rows"></div>
+  <div class="grid-header">
+    <div class="grid-item" *ngFor="let header of headers">
+      {{header}}
+    </div>
+    <div class="jobs-container">
+      <div class="grid-item {{job}}" *ngFor="let job of jobs">
+        {{job}}
+      </div>
+    </div>
+  </div>
+  <div class="grid-row" *ngFor="let mechanic of mechanics">
+    <div class="grid-item">{{mechanic.start}}</div>
+    <div class="grid-item">{{mechanic.name}}</div>
+    <div class="grid-item">{{mechanic.type}}</div>
+    <div class="grid-item">{{mechanic.hit}}</div>
+    <div class="jobs-container">
+      <div class="job-item {{job}}" *ngFor="let job of jobs">
+        <app-skill-pick-list></app-skill-pick-list>
+      </div>
+    </div>
   </div>
 </div>
